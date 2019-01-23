@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		293864551B47645952894B8D /* Pods_FirebaseTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0F861EFB190156BED69FF6 /* Pods_FirebaseTutorial.framework */; };
 		B33A07E8216235F300520923 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B33A07E7216235F300520923 /* GoogleService-Info.plist */; };
+		B34DECAE218099B200998D7B /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DECAD218099B200998D7B /* UploadManager.swift */; };
 		B39936F72164D0370078E1DD /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39936F62164D0360078E1DD /* InformationViewController.swift */; };
 		B3B5B61D216BB275007871D8 /* fireBaseViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5B61C216BB275007871D8 /* fireBaseViewViewController.swift */; };
 		B3EC560021639F5F00693296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EC55FF21639F5E00693296 /* Assets.xcassets */; };
 		B3EC560A2163B44500693296 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC56092163B44500693296 /* thirdViewController.swift */; };
+		B3F0BE70216F607500C93EC8 /* viewPupilsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F0BE6F216F607500C93EC8 /* viewPupilsViewController.swift */; };
 		F4443AE01DF2DFDA00800C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4443ADF1DF2DFDA00800C92 /* AppDelegate.swift */; };
 		F4443AE51DF2DFDA00800C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4443AE31DF2DFDA00800C92 /* Main.storyboard */; };
 		F4443AEA1DF2DFDA00800C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4443AE81DF2DFDA00800C92 /* LaunchScreen.storyboard */; };
@@ -27,10 +29,12 @@
 		504E5696D049E86797F54141 /* Pods-FirebaseTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTutorial/Pods-FirebaseTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		65F478EF32BE39C49B1AC368 /* Pods-FirebaseTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTutorial/Pods-FirebaseTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		B33A07E7216235F300520923 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B34DECAD218099B200998D7B /* UploadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadManager.swift; sourceTree = "<group>"; };
 		B39936F62164D0360078E1DD /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		B3B5B61C216BB275007871D8 /* fireBaseViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireBaseViewViewController.swift; sourceTree = "<group>"; };
 		B3EC55FF21639F5E00693296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3EC56092163B44500693296 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		B3F0BE6F216F607500C93EC8 /* viewPupilsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewPupilsViewController.swift; sourceTree = "<group>"; };
 		F4443ADC1DF2DFDA00800C92 /* FirebaseTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4443ADF1DF2DFDA00800C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4443AE41DF2DFDA00800C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				B3EC56092163B44500693296 /* thirdViewController.swift */,
 				B39936F62164D0360078E1DD /* InformationViewController.swift */,
 				B3B5B61C216BB275007871D8 /* fireBaseViewViewController.swift */,
+				B3F0BE6F216F607500C93EC8 /* viewPupilsViewController.swift */,
+				B34DECAD218099B200998D7B /* UploadManager.swift */,
 			);
 			path = FirebaseTutorial;
 			sourceTree = "<group>";
@@ -242,10 +248,12 @@
 				F4443AF71DF2E34F00800C92 /* LoginViewController.swift in Sources */,
 				F4443AF51DF2E34F00800C92 /* SignUpViewController.swift in Sources */,
 				B39936F72164D0370078E1DD /* InformationViewController.swift in Sources */,
+				B3F0BE70216F607500C93EC8 /* viewPupilsViewController.swift in Sources */,
 				B3EC560A2163B44500693296 /* thirdViewController.swift in Sources */,
 				B3B5B61D216BB275007871D8 /* fireBaseViewViewController.swift in Sources */,
 				F4443AF81DF2E34F00800C92 /* ResetPasswordViewController.swift in Sources */,
 				F4443AE01DF2DFDA00800C92 /* AppDelegate.swift in Sources */,
+				B34DECAE218099B200998D7B /* UploadManager.swift in Sources */,
 				F4443AF61DF2E34F00800C92 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

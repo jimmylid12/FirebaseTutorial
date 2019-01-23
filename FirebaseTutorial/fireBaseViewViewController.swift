@@ -16,6 +16,12 @@ class fireBaseViewViewController: UIViewController
     
     @IBOutlet weak var fieldAge: UITextField!
     
+    @IBOutlet weak var fieldVenue: UITextField!
+    
+    @IBOutlet weak var fieldClasses: UITextField!
+    
+    
+    @IBOutlet weak var fieldLevel: UITextField!
     
      var ref : DatabaseReference!
     
@@ -24,6 +30,7 @@ class fireBaseViewViewController: UIViewController
     
     {
         super.viewDidLoad()
+        
         ref = Database.database().reference()
         // Do any additional setup after loading the view.
     }
@@ -33,11 +40,29 @@ class fireBaseViewViewController: UIViewController
     @IBAction func upload(_ sender: Any)
     {
         let name = fieldName.text
-        ref?.child("name").setValue(name)
+        ref?.child("name").childByAutoId().setValue(name)
+        
         let age = fieldAge.text
-        ref?.child("age").setValue(age)
+        ref?.child("age").childByAutoId().setValue(age)
+        
+      
+        let Classes = fieldClasses.text
+        ref?.child("Classes").childByAutoId().setValue(Classes)
+        
+        
+       let level = fieldLevel.text
+        ref?.child("level").childByAutoId().setValue(level)
+        
+      
+        let venue = fieldVenue.text
+        ref?.child("venue").childByAutoId().setValue(venue)
+        
+       
         NSLog("Uploading...")
     }
+    
+    
+    
     
     
 }

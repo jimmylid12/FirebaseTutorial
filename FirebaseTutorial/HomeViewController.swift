@@ -36,7 +36,8 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         super.viewDidLoad()
       
         
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
