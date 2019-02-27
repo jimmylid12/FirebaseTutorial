@@ -14,7 +14,11 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     
    
-   
+    @IBAction func testButton(_ sender: Any)
+    {
+        
+       self.performSegue(withIdentifier: "test", sender: self)   }
+    
     
     @IBAction func buttonClicked(_ sender: Any)
     {
@@ -64,6 +68,8 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 
             } catch let error as NSError {
                 print(error.localizedDescription)
+                print ("test")
+                
             }
             
         }

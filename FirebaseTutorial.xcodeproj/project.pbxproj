@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		293864551B47645952894B8D /* Pods_FirebaseTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0F861EFB190156BED69FF6 /* Pods_FirebaseTutorial.framework */; };
+		2B235C5A2225E18300CB02AC /* ViewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B235C592225E18300CB02AC /* ViewsController.swift */; };
 		B33A07E8216235F300520923 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B33A07E7216235F300520923 /* GoogleService-Info.plist */; };
 		B34DECAE218099B200998D7B /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DECAD218099B200998D7B /* UploadManager.swift */; };
 		B39936F72164D0370078E1DD /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39936F62164D0360078E1DD /* InformationViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B235C592225E18300CB02AC /* ViewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsController.swift; sourceTree = "<group>"; };
 		2D0F861EFB190156BED69FF6 /* Pods_FirebaseTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		504E5696D049E86797F54141 /* Pods-FirebaseTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTutorial/Pods-FirebaseTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		65F478EF32BE39C49B1AC368 /* Pods-FirebaseTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseTutorial/Pods-FirebaseTutorial.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				B3B5B61C216BB275007871D8 /* fireBaseViewViewController.swift */,
 				B3F0BE6F216F607500C93EC8 /* viewPupilsViewController.swift */,
 				B34DECAD218099B200998D7B /* UploadManager.swift */,
+				2B235C592225E18300CB02AC /* ViewsController.swift */,
 			);
 			path = FirebaseTutorial;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				B39936F72164D0370078E1DD /* InformationViewController.swift in Sources */,
 				B3F0BE70216F607500C93EC8 /* viewPupilsViewController.swift in Sources */,
 				B3EC560A2163B44500693296 /* thirdViewController.swift in Sources */,
+				2B235C5A2225E18300CB02AC /* ViewsController.swift in Sources */,
 				B3B5B61D216BB275007871D8 /* fireBaseViewViewController.swift in Sources */,
 				F4443AF81DF2E34F00800C92 /* ResetPasswordViewController.swift in Sources */,
 				F4443AE01DF2DFDA00800C92 /* AppDelegate.swift in Sources */,
