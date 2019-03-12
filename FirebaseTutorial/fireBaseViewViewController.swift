@@ -21,11 +21,10 @@ class fireBaseViewViewController: UIViewController
     
     @IBOutlet weak var fieldClasses: UITextField!
     
-    
-    
     @IBOutlet weak var imageView: UIImageView!
     var newMedia: Bool?
     
+    @IBOutlet weak var PupilName: UITextField!
     
     @IBOutlet weak var fieldLevel: UITextField!
     
@@ -45,7 +44,9 @@ class fireBaseViewViewController: UIViewController
             self.present(imagePicker, animated: true,
                          completion: nil)
             newMedia = true
-        }    }
+        }
+        
+    }
     
     
     
@@ -67,11 +68,6 @@ class fireBaseViewViewController: UIViewController
         }    }
     
     var ref : DatabaseReference!
-    
-    
-    
-  
-
     
     override func viewDidLoad()
     
@@ -104,7 +100,7 @@ class fireBaseViewViewController: UIViewController
     @IBAction func upload(_ sender: Any)
     {
         let name = fieldName.text
-        ref?.child("name").childByAutoId().setValue(name)
+        ref?.child("ClubName").childByAutoId().setValue(name)
         
         let age = fieldAge.text
         ref?.child("age").childByAutoId().setValue(age)
@@ -121,6 +117,8 @@ class fireBaseViewViewController: UIViewController
         let venue = fieldVenue.text
         ref?.child("venue").childByAutoId().setValue(venue)
         
+        let pName = PupilName.text
+        ref?.child("pupilName").childByAutoId().setValue(pName)
        
         NSLog("Uploading...")
     }
@@ -128,5 +126,5 @@ class fireBaseViewViewController: UIViewController
     
     
     
-    
+
 }

@@ -1,55 +1,60 @@
-//
-//  ViewsController.swift
-//  FirebaseTutorial
-//
-//  Created by James Liddle on 26/02/2019.
-//  Copyright © 2019 AppCoda. All rights reserved.
-//
+
 
 import UIKit
+import Firebase
+import MobileCoreServices
 
-//
-//  ViewController.swift
-//  myImageImporter
-//
-//  Created by Sebastian Hette on 21.09.2016.
-//  Copyright © 2016 MAGNUMIUM. All rights reserved.
-//
 
-import UIKit
 
-class ViewsController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+
+class ViewsController: UIViewController
+{
     
-    @IBOutlet weak var myImageView: UIImageView!
+   
+    @IBOutlet weak var coachNames: UITextField!
     
-    @IBAction func importImage(_ sender: AnyObject)
-    {
-        let image = UIImagePickerController()
-        image.delegate = self
-        
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        
-        image.allowsEditing = false
-        
-        self.present(image, animated: true)
-        {
-            //After it is complete
-        }
-    }
+    @IBOutlet weak var coachLevel: UITextField!
+    
+    @IBOutlet weak var coachLocation: UITextField!
+    
+    @IBOutlet weak var coachAgeGroup: UITextField!
+    
+    var ref : DatabaseReference!
+    
+    
     
    
     
-    
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+          ref = Database.database().reference()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func upload(_ sender: Any)
+    {
+        let coachN = coachNames.text
+        ref?.child("coachNames").childByAutoId().setValue(coachN)
+        
+        
+        let coachL = coachLevel.text
+        ref?.child("coachlevel").childByAutoId().setValue(coachL)
+        
+       
+    
+        
+        NSLog("Uploading...")
+        
+        
+        
+    }
     
 }
 
